@@ -1,6 +1,7 @@
 import {useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import logof from "./logof.jpg"
 
 const App = () => {
   // first section usestate //
@@ -11,13 +12,17 @@ const App = () => {
 
   return (
     <div className="container mx-auto shadow-md bg-white rounded-sm pb-6">
-      <section>
-        <div className="flex flex-col items-center justify-center py-4 w-full">
-          <h1 className="text-[22px] font-bold text-center">
+      <section className="flex">
+        
+        <div className="flex flex-col text-center py-4 w-full  ml-[19px]">
+          <h1 className="text-[22px] font-bold  text-center md:text-left">
             ডেবনেয়ার লিমিটেড । অরবিটেক্স নিটওয়্যার লিমিটেড
           </h1>
-          <p>গোরাট, আশুলিয়া, সাভার, ঢাকা-১৩৪১</p>
-          <p className="text-[14px]"> চুড়ান্ত নিষ্পত্তিকরন হিসাব </p>
+          <p className="text-center md:text-left">গোরাট, আশুলিয়া, সাভার, ঢাকা-১৩৪১</p>
+          <p className="text-[14px] text-center md:text-left"> চুড়ান্ত নিষ্পত্তিকরন হিসাব </p>
+        </div>
+        <div className="  mr-[14px] hidden md:block">
+             <img src={logof} alt="" className="w-[150px] "/>
         </div>
       </section>
 
