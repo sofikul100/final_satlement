@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="container mx-auto shadow-md bg-white rounded-sm pb-6">
-      <section className="flex">
+      <section className="flex items-center justify-between">
         
         <div className="flex flex-col text-center py-4 w-full  ml-[19px]">
           <h1 className="text-[22px] font-bold  text-center md:text-left">
