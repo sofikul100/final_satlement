@@ -26,7 +26,7 @@ const App = () => {
         <div className="container px-5 mx-auto">
           <div>
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
-              কর্মচারীর অব্যাহতির তথ্য ও সংক্রান্ত তারিখসমূহ
+              কর্মচারীর অব্যাহতির তথ্য ও সংক্রান্ত তারিখসমূহ.
             </h3>
           </div>
           <div className="flex flex-wrap md:flex-nowrap gap-0">
@@ -224,7 +224,7 @@ const App = () => {
         <div className="container px-5 py-1 mx-auto">
           <div>
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
-              বেতন ও উপস্থিতি সংক্ষিপ্ত বিবরণ
+              বেতন ও উপস্থিতি সংক্ষিপ্ত বিবরণ.
             </h3>
           </div>
           <div className="flex flex-wrap gap-0">
@@ -372,7 +372,7 @@ const App = () => {
         <div className="container px-5 py-1 mx-auto">
           <div>
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
-              ওভারটাইম হিসাব সংক্ষিপ্ত বিবরণ
+              ওভারটাইম হিসাব সংক্ষিপ্ত বিবরণ.
             </h3>
           </div>
 
@@ -458,7 +458,7 @@ const App = () => {
         <div className="container px-5 py-1 mx-auto">
           <div>
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
-              অর্জিত ছুটি ও প্রাপ্য হিসাব বিবরণ
+              অর্জিত ছুটি ও প্রাপ্য হিসাব বিবরণ.
             </h3>
           </div>
 
@@ -600,7 +600,7 @@ const App = () => {
         <div className="container px-5 py-1 mx-auto">
           <div>
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
-              অর্জিত ছুটি ও প্রাপ্য হিসাব বিবরণ
+              অর্জিত ছুটি ও প্রাপ্য হিসাব বিবরণ.
             </h3>
           </div>
 
@@ -769,7 +769,7 @@ const App = () => {
         <div className="container px-5 py-1 mx-auto">
           <div>
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
-              সুবিধার হিসাব বিবরণ
+              সুবিধার হিসাব বিবরণ.
             </h3>
           </div>
 
@@ -880,7 +880,7 @@ const App = () => {
         <div className="container px-5 py-1 mx-auto">
           <div>
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
-              অন্যন্য সুবিধার হিসাব বিবরণ
+              অন্যন্য সুবিধার হিসাব বিবরণ.
             </h3>
           </div>
 
@@ -993,7 +993,7 @@ const App = () => {
         <div className="container px-5 py-1 mx-auto">
           <div>
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
-              বিবিধ কর্তন
+              বিবিধ কর্তন.
             </h3>
           </div>
 
@@ -1131,7 +1131,7 @@ const App = () => {
         <div className="container px-5 py-1 mx-auto">
           <div>
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
-              মোট প্রদেয়
+              মোট প্রদেয়.
             </h3>
           </div>
 
