@@ -1117,7 +1117,7 @@ const App = () => {
                     </tr>
                     <tr className="border-b border-gray-300">
                       <th className="text-[12px] font-bold py-[12px] px-[5px]">
-                        Deduction for Absence:
+                        Other Deduction ( If any ):
                       </th>
                     </tr>
                     <tr className="border-b border-gray-300">
