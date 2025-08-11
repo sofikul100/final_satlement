@@ -1,7 +1,7 @@
-import {useState } from "react";
+import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import logof from "./logof.jpg"
+import logof from "./logof.jpg";
 
 const App = () => {
   // first section usestate //
@@ -13,16 +13,20 @@ const App = () => {
   return (
     <div className="container mx-auto shadow-md bg-white rounded-sm pb-6">
       <section className="flex items-center justify-between">
-        
         <div className="flex flex-col text-center py-4 w-full  ml-[19px]">
           <h1 className="text-[22px] font-bold  text-center md:text-left">
             ডেবনেয়ার লিমিটেড । অরবিটেক্স নিটওয়্যার লিমিটেড
           </h1>
-          <p className="text-center md:text-left">গোরাট, আশুলিয়া, সাভার, ঢাকা-১৩৪১</p>
-          <p className="text-[14px] text-center md:text-left"> চুড়ান্ত নিষ্পত্তিকরন হিসাব </p>
+          <p className="text-center md:text-left">
+            গোরাট, আশুলিয়া, সাভার, ঢাকা-১৩৪১
+          </p>
+          <p className="text-[14px] text-center md:text-left">
+            {" "}
+            চুড়ান্ত নিষ্পত্তিকরন হিসাব{" "}
+          </p>
         </div>
         <div className="  mr-[14px] hidden md:block">
-             <img src={logof} alt="" className="w-[150px] "/>
+          <img src={logof} alt="" className="w-[150px] " />
         </div>
       </section>
 
@@ -33,6 +37,18 @@ const App = () => {
             <h3 className="font-extrabold uppercase text-[14px] py-2 px-2 bg-sky-700 text-white shadow-sm">
               কর্মচারীর অব্যাহতির তথ্য ও সংক্রান্ত তারিখসমূহ.
             </h3>
+            <div className=" py-2 px-1 border ">
+              <select
+                id="resign_type"
+                className="border py-[7px] font-bold border-gray-300  text-gray-600 text-base  font-400 w-full focus:outline-none"
+              >
+                <option value="Resign" selected> SELECT YOUR COMPANY </option>
+                <option value="DL">DEBONAIR LIMITED </option>
+                <option value="OKL">ORBITEX KNITWEAR LIMITED</option>
+                <option value="FKL">FRIENDS KNITING LIMITED </option>
+                <option value="DL-2">DEBONAIR LIMITED UINIT-2</option>
+              </select>
+            </div>
           </div>
           <div className="flex flex-wrap md:flex-nowrap gap-0">
             {/* Left Column (70%) */}
@@ -350,7 +366,7 @@ const App = () => {
                       </tr>
                     ))}
                     <tr className="border-b border-gray-300 font-bold">
-                      <td className="py-[10px] px-[5px]">
+                      <td className="py-[8px] px-[5px]">
                         <input
                           type="number"
                           className="w-full px-2 py-1 text-sm font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 placeholder-gray-400 focus:outline-none"
@@ -359,7 +375,7 @@ const App = () => {
                       </td>
                     </tr>
                     <tr className="border-b border-gray-300 font-bold bg-gray-300 text-black">
-                      <td className="py-[24px] px-[5px]">
+                      <td className="py-[26.5px] px-[5px]">
                         <h4>০০.০০ ৳</h4>
                       </td>
                     </tr>
@@ -685,7 +701,6 @@ const App = () => {
                       <td className="py-[5px] px-[5px]">
                         <input
                           type="text"
-                          
                           className="w-full px-2 py-[6px] text-sm font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 placeholder-gray-400 focus:outline-none"
                           placeholder="০ দিন"
                         />
@@ -914,9 +929,9 @@ const App = () => {
                         নাইট বিলঃ
                       </th>
                     </tr>
-                     <tr className="border-b border-gray-300">
+                    <tr className="border-b border-gray-300">
                       <th className="font-bold py-[12px] px-[5px]">
-                         অতিরিক্ত কর্মঘন্টাঃ 
+                        অতিরিক্ত কর্মঘন্টাঃ
                       </th>
                     </tr>
 
@@ -935,7 +950,7 @@ const App = () => {
               <div className="h-full bg-opacity-75 overflow-hidden text-center relative">
                 <table className="min-w-full text-sm text-left text-black border border-gray-300">
                   <tbody>
-                    <tr className="border-b border-gray-300" >
+                    <tr className="border-b border-gray-300">
                       <td className="py-[5px] px-[5px]" colSpan={3}>
                         <input
                           type="text"
@@ -953,9 +968,8 @@ const App = () => {
                           placeholder="০০.০০"
                         />
                       </td>
-
                     </tr>
-                     <tr className="border-b border-gray-300">
+                    <tr className="border-b border-gray-300">
                       <td className="py-[5px] px-[5px]">
                         <input
                           type="text"
@@ -980,7 +994,7 @@ const App = () => {
                     </tr>
 
                     <tr className="border-b border-gray-300 font-bold bg-gray-300 text-black">
-                      <td className="py-[12.5px] px-[5px]"  colSpan={3}>
+                      <td className="py-[12.5px] px-[5px]" colSpan={3}>
                         <h4>০০.০০ ৳</h4>
                       </td>
                     </tr>
