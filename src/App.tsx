@@ -344,7 +344,7 @@ const App = () => {
                       "Medical Allowance",
                       "Food Allowance",
                       "Transport Allowance",
-                    ].map((placeholder, idx) => (
+                    ].map((idx) => (
                       <tr key={idx} className="border-b border-gray-300">
                         <td className="py-[4px] px-[5px]">
                           <input
