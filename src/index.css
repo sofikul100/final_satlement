@@ -2,35 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans Bengali', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-body{
-  font-family: 'Noto Sans Bengali', sans-serif;
-  background:#EEF6FD;
+body {
+  font-family: "Roboto", sans-serif;
+  background: #eef6fd;
   scroll-behavior: smooth;
 }
-
 
 .gradient-text {
   font-weight: bold;
   text-transform: uppercase;
-  background: linear-gradient(
-    120deg,
-    #c50b0b,
-    #ff7300,
-    #ee4e71,
-    #E11D48,
-    #36b5f5,
-    #0284C7,
-    #a600ff,
-    #ff0000
-  );
+  background: linear-gradient(120deg, #c50b0b, #ff7300, #ee4e71, #e11d48, #36b5f5, #0284c7, #a600ff, #ff0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300% 300%;
@@ -49,7 +37,6 @@ body{
   }
 }
 
-
-#resign_type{
-   font-size:11px !important;
+#resign_type {
+  font-size: 11px !important;
 }

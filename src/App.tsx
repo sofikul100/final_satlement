@@ -4,6 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import logof from "./logof.jpg";
 
 const App = () => {
+
   // first section usestate //
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedDate2, setSelectedDate2] = useState(null);
@@ -29,7 +30,7 @@ const App = () => {
     const calculatedRemainingLeave = calculatedTotalLeave - useLeaveNum;
     setRemaingLeave(Number(calculatedRemainingLeave.toFixed(2)));
 
-    const basicSalary = 7400  ; // Example basic salary
+    const basicSalary = 7400; // Example basic salary
     const calculatedPerDayRate = basicSalary / 30;
     setPerDayRate(Number(calculatedPerDayRate.toFixed(2)));
 
@@ -48,6 +49,16 @@ const App = () => {
   };
 
   //##################### END EARN LEAVE CALCULATION ####################//
+
+  //##################### SERVUCE BENEFIT CALCULATION ####################//
+
+  // const [joiningDate, setJoiningDate] = useState<string>("3-8-2016");
+  // const [totalServiceday, setTotalServiceday] = useState<number>(0);
+  // const [totalServiceYear, setTotalServiceYear] = useState<number>(0);
+  // const [actualServiceYear, setActualServiceYear] = useState<number>(0);
+
+
+  //##################### END SERVICE BENEFIT CALCULATION ####################//
 
   return (
     <div className="container mx-auto shadow-md bg-white rounded-sm pb-6">
@@ -85,7 +96,7 @@ const App = () => {
                   {" "}
                   SELECT YOUR COMPANY{" "}
                 </option>
-                <option value="DL">DEBONAIR LIMITED </option>
+                <option value="DL" selected>DEBONAIR LIMITED </option>
                 <option value="OKL">ORBITEX KNITWEAR LIMITED</option>
                 <option value="FKL">FRIENDS KNITING LIMITED </option>
                 <option value="DL-2">DEBONAIR LIMITED UINIT-2</option>
@@ -99,7 +110,9 @@ const App = () => {
                 <table className="min-w-full text-sm text-left text-black border border-gray-300">
                   <tbody>
                     <tr className="border-b border-t border-gray-300">
-                      <th className="font-bold text-[12px] py-[4px] px-[4px]">ID NO</th>
+                      <th className="font-bold text-[12px] py-[4px] px-[4px]">
+                        ID NO
+                      </th>
                       <td className="py-[4px] px-[4px]">
                         <div className="relative">
                           <input
@@ -236,12 +249,16 @@ const App = () => {
                       </td>
                     </tr>
                     <tr className="border-b border-gray-300">
-                      <th className="font-bold text-[12px]  px-[4px]">Effective Date:</th>
+                      <th className="font-bold text-[12px]  px-[4px]">
+                        Effective Date:
+                      </th>
                       <td className="px-[4px] py-[4px]">
                         <div className="w-full">
                           <DatePicker
                             selected={selectedDate2}
-                            onChange={(date: any) => setSelectedDate2(date)}
+                            onChange={(date: any) =>
+                              setSelectedDate2(date)
+                            }
                             dateFormat="dd/MM/yyyy"
                             className=" px-[4px] text-[11px] w-[361px] py-[7px] font-bold border border-gray-300  focus:outline-none"
                             placeholderText="DD-MM-YYYY"
@@ -318,7 +335,9 @@ const App = () => {
                       </th>
                     </tr>
                     <tr className="border-b border-gray-300">
-                      <th className="font-bold text-[12px] py-[9px] px-[5px]">Food:</th>
+                      <th className="font-bold text-[12px] py-[9px] px-[5px]">
+                        Food:
+                      </th>
                     </tr>
                     <tr className="border-b border-gray-300">
                       <th className="font-bold text-[12px] py-[9px] px-[5px]">
@@ -326,7 +345,9 @@ const App = () => {
                       </th>
                     </tr>
                     <tr>
-                      <th className="font-bold text-[12px] py-[10px] px-[5px]">Total:</th>
+                      <th className="font-bold text-[12px] py-[10px] px-[5px]">
+                        Total:
+                      </th>
                     </tr>
                   </tbody>
                 </table>
@@ -382,7 +403,9 @@ const App = () => {
                       </th>
                     </tr>
                     <tr className="border-b border-gray-300">
-                      <th className="font-bold text-[12px] py-[9px] px-[5px]">Absence:</th>
+                      <th className="font-bold text-[12px] py-[9px] px-[5px]">
+                        Absence:
+                      </th>
                     </tr>
                     <tr className="border-b border-gray-300">
                       <th className="font-bold text-[12px] py-[9px] px-[5px]">
@@ -761,7 +784,8 @@ const App = () => {
                           disabled
                           type="text"
                           className="w-full px-2 py-[6px] text-[12px] font-bold shadow-xs text-gray-900 bg-transparent border border-gray-300 placeholder-gray-400 focus:outline-none"
-                          placeholder="24-05-2024"
+                          placeholder="00-00-0000"
+                          value="10-05-2024"
                         />
                       </td>
                     </tr>
@@ -771,16 +795,19 @@ const App = () => {
                           type="text"
                           disabled
                           className="w-full px-2 py-[6px] text-[12px] font-bold shadow-xs text-gray-900 bg-transparent border border-gray-300 placeholder-gray-400 focus:outline-none"
-                          placeholder="22-09-2024"
+                          placeholder="05-10-2025"
+                          value={"05-10-2025"}
                         />
                       </td>
                     </tr>
                     <tr className="border-b border-gray-300">
                       <td className="py-[5px] px-[5px]">
                         <input
+                          disabled
                           type="number"
                           className="w-full px-2 py-[6px] text-[12px] font-bold shadow-xs text-gray-900 bg-transparent border border-gray-300 placeholder-gray-400 focus:outline-none"
                           placeholder="0"
+                        
                         />
                       </td>
                     </tr>
@@ -791,6 +818,7 @@ const App = () => {
                           disabled
                           className="w-full px-2 py-[6px] text-[12px] font-bold shadow-xs text-gray-900 bg-transparent border border-gray-300 placeholder-gray-400 focus:outline-none"
                           placeholder="0.00"
+                        
                         />
                       </td>
                     </tr>
@@ -1126,7 +1154,9 @@ const App = () => {
                       </th>
                     </tr>
                     <tr className="border-b border-gray-300">
-                      <th className="text-[12px] font-bold py-[12px] px-[5px]">Stamp:</th>
+                      <th className="text-[12px] font-bold py-[12px] px-[5px]">
+                        Stamp:
+                      </th>
                     </tr>
                     <tr className="border-b border-gray-300">
                       <th className="font-bold py-[12px] px-[5px] text-right">
@@ -1239,7 +1269,7 @@ const App = () => {
               <div className="h-full bg-opacity-75 overflow-hidden text-center relative">
                 <div className="h-full bg-opacity-75 border border-gray-300 overflow-hidden text-center relative flex justify-center items-center">
                   <p className="text-center font-extrabold text-[18px]">
-                    NET PAYABLE AMOUNT : 
+                    NET PAYABLE AMOUNT :
                   </p>
                 </div>
               </div>
@@ -1270,13 +1300,13 @@ const App = () => {
           <button className="text-xl w-32 h-12 rounded bg-sky-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000">
             <span className="absolute bg-sky-600 w-36 h-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span>
             <span className="absolute bg-sky-800 w-36 h-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>
-            প্রিন্ট
+            Print
           </button>
 
           <button className="text-xl w-32 h-12 rounded bg-emerald-500 text-white relative overflow-hidden group z-10 hover:text-white duration-1000">
             <span className="absolute bg-emerald-600 w-36 h-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span>
             <span className="absolute bg-emerald-800 w-36 h-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>
-            সংরক্ষণ
+            Save
           </button>
         </div>
       </div>
