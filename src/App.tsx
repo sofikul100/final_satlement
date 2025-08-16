@@ -4,7 +4,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import logof from "./logof.jpg";
 
 const App = () => {
-
   // first section usestate //
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedDate2, setSelectedDate2] = useState(null);
@@ -57,11 +56,10 @@ const App = () => {
   // const [totalServiceYear, setTotalServiceYear] = useState<number>(0);
   // const [actualServiceYear, setActualServiceYear] = useState<number>(0);
 
-
   //##################### END SERVICE BENEFIT CALCULATION ####################//
 
   return (
-    <div className="container mx-auto shadow-md bg-white rounded-sm pb-6">
+    <div className="container mx-auto shadow-md bg-white rounded-sm">
       <section className="flex items-center justify-between">
         <div className="flex flex-col text-center py-4 w-full  ml-[19px]">
           <h1 className="text-[22px] font-bold  text-center md:text-left">
@@ -96,7 +94,9 @@ const App = () => {
                   {" "}
                   SELECT YOUR COMPANY{" "}
                 </option>
-                <option value="DL" selected>DEBONAIR LIMITED </option>
+                <option value="DL" selected>
+                  DEBONAIR LIMITED{" "}
+                </option>
                 <option value="OKL">ORBITEX KNITWEAR LIMITED</option>
                 <option value="FKL">FRIENDS KNITING LIMITED </option>
                 <option value="DL-2">DEBONAIR LIMITED UINIT-2</option>
@@ -256,9 +256,7 @@ const App = () => {
                         <div className="w-full">
                           <DatePicker
                             selected={selectedDate2}
-                            onChange={(date: any) =>
-                              setSelectedDate2(date)
-                            }
+                            onChange={(date: any) => setSelectedDate2(date)}
                             dateFormat="dd/MM/yyyy"
                             className=" px-[4px] text-[11px] w-[361px] py-[7px] font-bold border border-gray-300  focus:outline-none"
                             placeholderText="DD-MM-YYYY"
@@ -807,7 +805,6 @@ const App = () => {
                           type="number"
                           className="w-full px-2 py-[6px] text-[12px] font-bold shadow-xs text-gray-900 bg-transparent border border-gray-300 placeholder-gray-400 focus:outline-none"
                           placeholder="0"
-                        
                         />
                       </td>
                     </tr>
@@ -818,7 +815,6 @@ const App = () => {
                           disabled
                           className="w-full px-2 py-[6px] text-[12px] font-bold shadow-xs text-gray-900 bg-transparent border border-gray-300 placeholder-gray-400 focus:outline-none"
                           placeholder="0.00"
-                        
                         />
                       </td>
                     </tr>
@@ -1311,6 +1307,14 @@ const App = () => {
         </div>
       </div>
       {/* END BUTTON SECTION */}
+
+      <section className="text-gray-600 body-font mt-8">
+        <div className="container px-5 mx-auto">
+          <footer className="bg-gray-100 border-t py-2 text-center text-xs text-gray-600">
+            © {new Date().getFullYear()} Your Company Name. All rights reserved.
+          </footer>
+        </div>
+      </section>
     </div>
   );
 };
